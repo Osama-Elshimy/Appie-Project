@@ -19,8 +19,6 @@
 
 		<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
-		<script defer src="js/script.js"></script>
-
 		<title>Appie</title>
 	</head>
 	<body>
@@ -29,6 +27,14 @@
 				<a href="#">
 					<img src="imgs/logo.png" alt="Appie logo" class="logo" />
 				</a>
+
+				<!-- 
+					The Checkbox and the nav must be siblings
+				-->
+				<input class="side-menu" type="checkbox" id="side-menu" />
+				<label class="hamb" for="side-menu"
+					><span class="hamb-line"></span
+				></label>
 
 				<nav class="main-nav">
 					<ul class="main-nav-list">
@@ -89,14 +95,7 @@
 				</nav>
 			</div>
 
-			<div class="test--mobile">
-				<a href="#" class="main-nav-link nav-cta">Get Started</a>
-
-				<button class="btn-mobile-nav">
-					<ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-					<ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-				</button>
-			</div>
+			<a href="#" class="main-nav-link nav-cta">Get Started</a>
 		</header>
 
 		<main>
